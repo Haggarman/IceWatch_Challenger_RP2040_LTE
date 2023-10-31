@@ -3,8 +3,8 @@
 ![20221101_180118](https://github.com/Haggarman/IceWatch_Challenger_RP2040_LTE/assets/96515734/f2a9d9d8-f910-4ca7-be98-d4896760a9e1)
 
 ## Basic Features:
-* Now monitors and messages about Power Loss, in addition to Temperature Switch Alarm.
 * Sends TCP messages to Hologram. Which then sends out SMS alerts to the cellphones that want them.
+* Now monitors and messages about Power Loss, in addition to Temperature Switch Alarm.
 * You can power on with dip switch #4 set to on to skip SARA modem init.
 * You can hold down button C on the OLED to power down the SARA modem.
 * Green LED flashes when a message send is pending, otherwise it breathes lighter and dimmer.
