@@ -22,8 +22,13 @@
 ## Required Libraries:
  Adafruit SH110X, Adafruit GFX Library
 
-##
- I have to document this one-time setup.
+## Setup:
+
+### Configruation files
+ Edit Arduino_secrets.h
+
+### One-Time Modem Setup
+
 Command	| Description
 -- | --
 AT | OK is what it should respond with after typing A T and then pressing enter. Both Linux or Windows style Carriage Returns / Line Feeds are acceptable from a serial terminal.
