@@ -24,8 +24,8 @@
 
 ## Setup:
 
-### Configruation files
- Edit Arduino_secrets.h
+### Configuration files
+ Edit Arduino_secrets.h with your device specific Hologram key. Key needs to be unique from hologram.io dashboard.
 
 ### One-Time Modem Setup
 
