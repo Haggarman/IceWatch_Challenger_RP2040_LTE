@@ -35,13 +35,13 @@ AT | OK is what it should respond with after typing A T and then pressing enter.
 AT+UPSV=0	| There is a default power saving setting which disables the UART after 6 seconds of inactivity. Leaving that on will drive you insane. Also good luck typing this within the first 6 seconds, buddy. Better keep spamming AT.
 AT+CPSMS=0 | Disable PSM (Power saving mode OFF, if only it would wake up properly this would be useful).
 AT+UMNOPROF=100	| The Challenger startup aggressively sets Standard Europe automatically so just go with this profile.
-AT+CFUN=15 | soft reset
+AT+CFUN=15 | Soft reset.
 AT+UBANDMASK=0,2074	| Bands available in the US are 2,4,5,12,13. That would be 6170.
 AT+UBANDMASK=1,2074	| However band 13 is causing issues at install site, so using 2074.
-AT+CFUN=15	| soft reset
-AT+CGDCONT=1,"IP","hologram"	| Set the APN
-AT+COPS=0	| Automatic Operator Selection (this is causing me problems, only AT&T wants to talk but it hops over and gets denied anyway.)
+AT+CFUN=15	| Soft reset.
+AT+CGDCONT=1,"IP","hologram"	| Set the APN.
+AT+COPS=0	| Automatic Operator Selection (this is causing me problems, only US Cellular or AT&T wants to talk but it hops over and gets denied anyway.)
 AT+CFUN=15	| Reset modem. Parameters get saved only during soft reset command or soft shutdown.
 AT+URAT=7	| Might help to set LTE Cat M1 technology only.
-AT+CFUN=15	| requires a soft reset as usual
+AT+CFUN=15	| Requires a soft reset as usual.
 AT+CPWROFF	| When you want to remove power you should tell modem to shut off first. Wait a few seconds after OK. Hard reset when downloading to the RP2040 will cause issues unless you **issue AT+CPWROFF first!**
